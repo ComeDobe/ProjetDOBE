@@ -1,0 +1,102 @@
+
+
+body{
+    background: linear-gradient(#ffffff, #b34ef6);
+    min-height: 100vh;
+}
+/*******************HEADER**********************/
+
+h1{
+    float: left;
+    margin-left: 10px;
+    font-family: cursive;
+    clear: both;
+}
+h1 a {
+    text-decoration: none;
+}
+h1 a :visited{
+    color: black;
+}
+h1 a :hover{
+    color: plum;
+}
+nav{
+    float: right;
+    margin-top: 10px;
+   
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li a :visited{
+    color: black;
+}
+nav ul li a :hover{
+    color: plum;
+}
+/************MAIN *******************/
+
+main{
+    clear: both;
+    margin-left: 10px;
+}
+h3{
+    padding-top: 90px;
+    font-size: 60px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+.bubble {
+  position: absolute;
+  border-radius: 300px;
+  background: rgba(255, 166, 0, 0.6);
+  opacity: 0;
+  animation: anim 10s forwards;
+  filter: hue-rotate(0deg);
+}
+
+@keyframes anim {
+  to {
+    top: -250px;
+    left: var(--left);
+    opacity: 1;
+    filter: hue-rotate(720deg);
+  }
+}
+h3 {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(128, 128, 128, 0.555);
+}
+/****SVG*****/
+
+svg{
+    width: 70%;
+    height: 70%;
+}
+.svg
+{
+    margin-left: 400px;
+    margin-top: 160px;
+}
+#skate{
+    animation-name: skate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes skate{
+    from{
+        transform: rotate(0deg)
+    }
+    to{transform: rotate(25deg);
+
+    }
+}

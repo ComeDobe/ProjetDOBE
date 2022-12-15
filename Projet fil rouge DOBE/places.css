@@ -1,0 +1,164 @@
+
+
+body{
+    background: linear-gradient(#ffffff, #b34ef6);
+    min-height: 100vh;
+}
+/*******************HEADER**********************/
+
+h1{
+    float: left;
+    margin-left: 10px;
+    font-family: cursive;
+    clear: both;
+}
+h1 a {
+    text-decoration: none;
+}
+h1 a :visited{
+    color: black;
+}
+h1 a :hover{
+    color: plum;
+}
+nav{
+    float: right;
+    margin-top: 10px;
+   
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li a :visited{
+    color: black;
+}
+nav ul li a :hover{
+    color: plum;
+}
+
+/****div*****/
+h4{
+    text-align: center;
+    font-family: cursive;
+    padding: 30px;
+   text-decoration: blue;
+}
+
+.Places{
+    clear: both;
+    background-color: blue;
+    padding-top: 200px;
+    text-align: center;
+    padding: 100px;
+    margin-left: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 300px;
+  background: rgba(255, 166, 0, 0.6);
+  opacity: 0;
+  animation: anim 5s forwards;
+  filter: hue-rotate(0deg);
+}
+
+@keyframes anim {
+  to {
+    top: -250px;
+    left: var(--left);
+    opacity: 1;
+    filter: hue-rotate(720deg);
+  }
+}
+h3 {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(128, 128, 128, 0.555);
+}
+
+/****************svg**********/
+svg{
+    width: 30%;
+    height: 30%;
+    
+}
+.svg{
+    margin-left: 50px;
+}
+/* ******************* FOOTER ******************** */
+#h2{
+  font-family: cursive;
+}
+footer {
+   background: linear-gradient( #b34ef6);
+  color: #e1f8ff;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+form {
+  margin: 0 auto;
+  max-width: 900px;
+}
+input, textarea, button {
+  border: none;
+  width: 60%;
+  padding: 15px 15px;
+  margin: 1px 0;
+  font-size: 1.2em;
+  font-family: 'Dancing Script', cursive;
+  border-radius: 8px;
+}
+textarea {
+  height: 120px;
+}
+button {
+  font-size: 1.5em;
+  background-color: #FFFAE1;
+  padding: 15px 15px;
+  width: 63%;
+}
+button:hover {
+  background-color: #ba8e87;
+  color: #FFFAE1;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+   width: 70%;
+}
+#deuxiemeTrait {
+  height: 1px;
+  width: 75%;
+  background-color: #FFFAE1;
+  margin: 60px auto;
+}
+#copyrightEtIcons {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0 10%;
+}
+#copyright {
+  width: 50%;
+  text-align: left;
+  color: #FFFAE1;
+}
+#icons {
+  width: 50%;
+  text-align: right;
+}
+#icons a {
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 1.3em;
+  color: #FFFAE1;
+}
+#icons a:hover {
+  transform: scale(1.5);
+  transition: 0.1s;
+}
+
